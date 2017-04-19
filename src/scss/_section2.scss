@@ -1,0 +1,153 @@
+.section2 { 
+    min-height: 50vh;
+}
+
+.section2 .container-fluid {
+    min-height: 50vh;
+}
+
+.section2 .jumbotron {
+    min-height: 50vh !important;
+    height: auto;
+    padding-bottom: 0vh !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    padding-top: 0vh;
+    margin-bottom: 0px;
+}
+
+.section2Header {
+    color: rgb(130, 129, 129);
+    position: absolute;
+    top: 5vh;
+    font-size: 20px;
+    font-family: "Myriad Pro";
+    letter-spacing: 2px;
+}
+
+.section2 hr {
+    border-top: 3px solid rgb(130, 129, 129);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 8%;
+}
+
+.section2Header span {
+    font-size: 15px;
+    color: rgb(183, 179, 179);
+    font-family: "OpenSansRegular";
+    letter-spacing: normal;
+}
+
+.works img {
+    width: 6.5vw;
+    margin: 0 auto;
+}
+
+.worksBackground {
+    background-color: #e1f3e1;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    width: 9vw;
+    margin: 0 auto;
+    border-radius: 35px;
+}
+
+.works {
+    width: 30vw;
+    display: block;
+    padding-top: 8vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.works h2 {
+    font-family: ProximaNovaBold;
+}
+
+.works p {
+    font-family: Montserrat Light;
+    width: 20vw;
+    margin: 0 auto;
+}
+
+.learnMoreButton {
+  text-shadow: none;
+  padding-top: 2vh;
+  background-color: #54d154;
+  color: white;
+  width: 20vw;
+  height: 7vh;
+  font-size: 3vh;
+  margin: 0 auto;
+  font-family: ProximaNovaRegular;
+  font-weight: normal;
+  display: inline-block;
+  letter-spacing: normal;
+}
+
+.btn-success {
+  margin-top: 10px;
+  border-radius: 40px;
+  background-color: #54d154;
+  border:none;
+}
+
+.btn-success:focus {
+  background-color: #54d154;
+  border: none;
+}
+
+.btn:focus {
+  outline: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .section2 { 
+        height: auto;
+    }
+
+    .section2 .container-fluid {
+        height: auto;
+    }
+
+    .section2 .jumbotron {
+        margin-bottom: 0px;
+        height: auto;
+    }
+
+    .works:last-child {
+        margin-bottom: 10vh;
+    }
+
+    .works {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 0;
+        margin-top: 25vh;
+    }
+
+    .works p {
+        width: 80%;
+    }
+
+    .works img {
+        width: 20vw;
+    }
+
+    .worksBackground {
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+    .works {
+        width: 40vw;
+    }
+
+    .works p {
+    font-family: Montserrat Light;
+    width: 40vw;
+    margin: 0 auto;
+    }
+}
