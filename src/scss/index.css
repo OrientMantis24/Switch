@@ -109,6 +109,7 @@
 
 .search {
   margin: 10px;
+  margin-right: 20px;
   height: 20px;
   width: 10vw;
   padding-left: 5px;
@@ -133,7 +134,9 @@
   cursor: pointer;
   background-color: white;
   border: none;
-  font-family: ProximaNovaLight; }
+  font-family: ProximaNovaLight;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .scrollDown:focus {
   background-color: white; }
@@ -158,7 +161,8 @@
   .scrollDown {
     font-size: 3vh;
     bottom: 1vh;
-    min-height: 4vh; }
+    min-height: 4vh;
+    padding-top: 0; }
 
   .scrollDown img {
     display: none; }
@@ -259,8 +263,11 @@
   position: absolute;
   top: 5vh;
   font-size: 20px;
-  font-family: "Myriad Pro";
-  letter-spacing: 2px; }
+  font-family: "Montserrat Light";
+  letter-spacing: 2px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 5vh; }
 
 .section2 hr {
   border-top: 3px solid #828181;
@@ -288,32 +295,20 @@
 
 .works {
   width: 30vw;
-  display: block;
+  display: inline-block;
   padding-top: 8vh;
   margin-top: 10vh;
   margin-bottom: 10vh; }
 
 .works h2 {
-  font-family: ProximaNovaBold; }
+  font-family: ProximaNovaBold;
+  font-size: 28px; }
 
 .works p {
   font-family: Montserrat Light;
   width: 20vw;
-  margin: 0 auto; }
-
-.learnMoreButton {
-  text-shadow: none;
-  padding-top: 2vh;
-  background-color: #54d154;
-  color: white;
-  width: 20vw;
-  height: 7vh;
-  font-size: 3vh;
   margin: 0 auto;
-  font-family: ProximaNovaRegular;
-  font-weight: normal;
-  display: inline-block;
-  letter-spacing: normal; }
+  font-size: 15px; }
 
 .btn-success {
   margin-top: 10px;
@@ -339,14 +334,20 @@
     margin-bottom: 0px;
     height: auto; }
 
+  .section2Header {
+    margin-top: 10vh;
+    width: 80vw; }
+
+  .works:first-child {
+    margin-top: 20vh; }
+
   .works:last-child {
     margin-bottom: 10vh; }
 
   .works {
     width: 100%;
-    display: inline-block;
     margin-bottom: 0;
-    margin-top: 25vh; }
+    margin-top: 0vh; }
 
   .works p {
     width: 80%; }
@@ -363,7 +364,115 @@
   .works p {
     font-family: Montserrat Light;
     width: 40vw;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .works:last-child {
+    margin-top: 0; }
+
+  .section2Header {
+    width: 80vw; } }
+.section3 {
+  background-color: #54d154;
+  height: auto;
+  position: relative; }
+
+.section3 .jumbotron {
+  height: auto;
+  margin-bottom: 10px; }
+
+.section3Header {
+  font-family: 'Montserrat Light';
+  color: #207b20;
+  font-size: 20px;
+  letter-spacing: 1px;
+  max-height: 40%;
+  width: 80vw; }
+
+.section3 hr {
+  border-top: 3px solid #207b20;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 3%; }
+
+.section3Header span {
+  font-size: 15px;
+  color: #207b20;
+  font-family: "OpenSansRegular";
+  letter-spacing: normal; }
+
+.btn-group {
+  margin-top: 4%; }
+
+.btn-group .btn:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px; }
+
+.btn-group .btn:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px; }
+
+.section3 .btn {
+  background-color: white;
+  color: #2b9b2b;
+  font-family: "ProximaNovaRegular";
+  border: none;
+  border: 1px solid #54d154;
+  box-shadow: none; }
+
+.viewMoreWork {
+  position: relative;
+  background-color: #2b9b2b !important;
+  color: white !important;
+  bottom: 0%; }
+
+.viewMoreWork img {
+  margin-left: 10px; }
+
+.section3 .active {
+  background-color: #2b9b2b;
+  color: white;
+  border: 1px solid #54d154; }
+
+.row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90vw; }
+
+.gallery {
+  display: block;
+  margin-top: none;
+  height: 40%; }
+
+.col {
+  display: inline-block;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%; }
+
+.col img {
+  width: 14vw; }
+
+@media screen and (max-width: 767px) {
+  .section3Header {
+    width: 80vw;
+    top: 10vh; }
+
+  .col {
+    width: 100%;
+    margin-bottom: 1vh; }
+
+  .col img {
+    width: 80vw; }
+
+  .row {
+    margin-bottom: 2vh; } }
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .col {
+    width: 45%;
+    margin-bottom: 1vh; }
+
+  .col img {
+    width: 100%; } }
 @font-face {
   font-family: NautilusPompilius;
   src: url("../../public/Nautilus.otf"); }
@@ -452,13 +561,15 @@
   right: 47vw; }
 
 html {
-  overflow: auto; }
+  overflow: hidden;
+  height: 100%; }
 
 body {
   margin: 0 0 0 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch; }
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: 100%; }
 
 /*# sourceMappingURL=index.css.map */

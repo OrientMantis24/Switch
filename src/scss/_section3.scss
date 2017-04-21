@@ -1,0 +1,127 @@
+.section3 {
+    background-color: #54d154;
+    height: auto;
+    position: relative;
+}
+
+.section3 .jumbotron {
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.section3Header {
+    font-family: 'Montserrat Light';
+    color: #207b20;
+    font-size: 20px;
+    letter-spacing: 1px;
+    max-height: 40%;
+    width: 80vw;
+}
+
+.section3 hr {
+    border-top: 3px solid #207b20;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 3%;
+}
+
+.section3Header span {
+    font-size: 15px;
+    color: #207b20;
+    font-family: "OpenSansRegular";
+    letter-spacing: normal;
+}
+
+.btn-group {
+    margin-top: 4%;
+}
+
+.btn-group .btn:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.btn-group .btn:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.section3 .btn {
+    background-color: white;
+    color: #2b9b2b;
+    font-family: "ProximaNovaRegular";
+    border: none;
+    border: 1px solid #54d154;
+    box-shadow: none;
+}
+
+.viewMoreWork {
+    position: relative;
+    background-color: #2b9b2b !important; 
+    color: white !important;
+    bottom: 0%;
+}
+
+.viewMoreWork img {
+    margin-left: 10px;
+}
+
+.section3 .active {
+    background-color: #2b9b2b;
+    color: white;
+    border: 1px solid #54d154;
+}
+ 
+.row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90vw;
+}
+
+.gallery {
+    display: block;
+    margin-top: none;
+    height: 40%;
+}
+
+.col {
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.col img{
+    width: 14vw;
+}
+
+@media screen and (max-width: 767px) {
+    .section3Header {
+        width: 80vw;
+        top: 10vh;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 1vh;
+    }
+
+    .col img{
+        width: 80vw;
+    }
+
+    .row {
+        margin-bottom: 2vh;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px){
+    .col {
+        width: 45%;
+        margin-bottom: 1vh;
+    }
+
+    .col img{
+        width: 100%;
+    }
+}

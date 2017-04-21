@@ -21,8 +21,11 @@
     position: absolute;
     top: 5vh;
     font-size: 20px;
-    font-family: "Myriad Pro";
+    font-family: "Montserrat Light";
     letter-spacing: 2px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin-top: 5vh;
 }
 
 .section2 hr {
@@ -55,7 +58,7 @@
 
 .works {
     width: 30vw;
-    display: block;
+    display: inline-block;
     padding-top: 8vh;
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -63,27 +66,14 @@
 
 .works h2 {
     font-family: ProximaNovaBold;
+    font-size: 28px;
 }
 
 .works p {
     font-family: Montserrat Light;
     width: 20vw;
     margin: 0 auto;
-}
-
-.learnMoreButton {
-  text-shadow: none;
-  padding-top: 2vh;
-  background-color: #54d154;
-  color: white;
-  width: 20vw;
-  height: 7vh;
-  font-size: 3vh;
-  margin: 0 auto;
-  font-family: ProximaNovaRegular;
-  font-weight: normal;
-  display: inline-block;
-  letter-spacing: normal;
+    font-size: 15px;
 }
 
 .btn-success {
@@ -116,15 +106,23 @@
         height: auto;
     }
 
+    .section2Header {
+        margin-top: 10vh;
+        width: 80vw;
+    }
+
+    .works:first-child {
+        margin-top: 20vh;
+    }
+
     .works:last-child {
         margin-bottom: 10vh;
     }
 
     .works {
         width: 100%;
-        display: inline-block;
         margin-bottom: 0;
-        margin-top: 25vh;
+        margin-top: 0vh;
     }
 
     .works p {
@@ -134,6 +132,7 @@
     .works img {
         width: 20vw;
     }
+
 
     .worksBackground {
         width: 30vw;
@@ -149,5 +148,13 @@
     font-family: Montserrat Light;
     width: 40vw;
     margin: 0 auto;
+    }
+
+    .works:last-child {
+        margin-top: 0;
+    }
+
+    .section2Header {
+        width: 80vw;
     }
 }
