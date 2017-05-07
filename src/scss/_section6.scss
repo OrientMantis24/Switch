@@ -1,0 +1,107 @@
+.section6 {
+	background-color: #54d154;
+}
+
+.section6 .jumbotron {
+	height: auto;
+	margin-bottom: 0;
+}
+
+.section6 .section6Header {
+	font-family: 'Montserrat Light';
+	color: white;
+	font-size: 20px;
+	letter-spacing: 1px;
+	max-height: 40%;
+	width: 80vw;
+}
+
+.section6 hr {
+	border-top: 3px solid #818181;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 4vw;
+}
+
+.section6Header span {
+	font-size: 15px;
+	color: #818181;
+	font-family: "OpenSansRegular";
+	letter-spacing: normal;
+}
+
+.worker {
+	display:block;
+	width: 15%;
+	margin-top: 20px;
+}
+
+.worker p {
+	font-size: 17px;
+	font-family: "ProximaNovaRegular";
+	color: white;
+}
+
+.worker .info {
+	background-color: #c5e9c5;
+	border-radius: 15px;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.worker img {
+	width :12vw;
+}
+
+.worker .info img {
+	width: 20%;
+	margin: 5%;
+}
+
+.worker .info img:hover {
+	opacity: 0.8;
+}
+
+hr.vertical
+{
+	display:block;
+	width: 2px;
+	size: 500px;
+	height: 5vh;
+	background-color: #207b20 !important;
+	border-top: none;
+} 
+
+@media screen and (max-width: 767px) {
+	.worker {
+		margin: 10px;
+		width: 100%;
+	}
+
+	.worker img {
+		width: 60%;
+		margin: 20px;
+	}
+
+	.worker hr {
+		display: none;
+	}
+
+	.worker p {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 767px) and (max-width: 1100px){
+	.worker {
+		width: 40vw;
+	}
+
+	.worker img {
+		width: auto;
+	}
+
+	.worker p {
+		font-size: 20px;
+	}
+}

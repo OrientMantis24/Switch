@@ -1,160 +1,161 @@
 .section2 { 
-    min-height: 50vh;
+	min-height: 50vh;
+	background-color: white;
 }
 
 .section2 .container-fluid {
-    min-height: 50vh;
+	min-height: 50vh;
 }
 
 .section2 .jumbotron {
-    min-height: 50vh !important;
-    height: auto;
-    padding-bottom: 0vh !important;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    padding-top: 0vh;
-    margin-bottom: 0px;
+	min-height: 50vh !important;
+	height: auto;
+	padding-bottom: 0vh !important;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	padding-top: 0vh;
+	margin-bottom: 0px;
 }
 
 .section2Header {
-    color: rgb(130, 129, 129);
-    position: absolute;
-    top: 5vh;
-    font-size: 20px;
-    font-family: "Montserrat Light";
-    letter-spacing: 2px;
-    left:50%;
-    transform: translate(-50%,-50%);
-    margin-top: 5vh;
+	color: rgb(130, 129, 129);
+	position: absolute;
+	top: 5vh;
+	font-size: 20px;
+	font-family: "Montserrat Light";
+	letter-spacing: 2px;
+	left:50%;
+	transform: translate(-50%,-50%);
+	margin-top: 5vh;
 }
 
 .section2 hr {
-    border-top: 3px solid rgb(130, 129, 129);
-    margin-top: 5px;
-    margin-bottom: 10px;
-    width: 8%;
+	border-top: 3px solid rgb(130, 129, 129);
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 4vw;
 }
 
 .section2Header span {
-    font-size: 15px;
-    color: rgb(183, 179, 179);
-    font-family: "OpenSansRegular";
-    letter-spacing: normal;
+	font-size: 15px;
+	color: rgb(183, 179, 179);
+	font-family: "OpenSansRegular";
+	letter-spacing: normal;
 }
 
 .works img {
-    width: 6.5vw;
-    margin: 0 auto;
+	width: 6.5vw;
+	margin: 0 auto;
 }
 
 .worksBackground {
-    background-color: #e1f3e1;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    width: 9vw;
-    margin: 0 auto;
-    border-radius: 35px;
+	background-color: #e1f3e1;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	width: 9vw;
+	margin: 0 auto;
+	border-radius: 35px;
 }
 
 .works {
-    width: 30vw;
-    display: inline-block;
-    padding-top: 8vh;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+	width: 30vw;
+	display: inline-block;
+	padding-top: 8vh;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
 }
 
 .works h2 {
-    font-family: ProximaNovaBold;
-    font-size: 28px;
+	font-family: ProximaNovaBold;
+	font-size: 28px;
 }
 
 .works p {
-    font-family: Montserrat Light;
-    width: 20vw;
-    margin: 0 auto;
-    font-size: 15px;
+	font-family: Montserrat Light;
+	width: 20vw;
+	margin: 0 auto;
+	font-size: 15px;
 }
 
 .btn-success {
-  margin-top: 10px;
-  border-radius: 40px;
-  background-color: #54d154;
-  border:none;
+	margin-top: 10px;
+	border-radius: 40px;
+	background-color: #54d154;
+	border:none;
 }
 
 .btn-success:focus {
-  background-color: #54d154;
-  border: none;
+	background-color: #54d154;
+	border: none;
 }
 
 .btn:focus {
-  outline: 0 !important;
+	outline: 0 !important;
 }
 
 @media screen and (max-width: 767px) {
-    .section2 { 
-        height: auto;
-    }
+	.section2 { 
+		height: auto;
+	}
 
-    .section2 .container-fluid {
-        height: auto;
-    }
+	.section2 .container-fluid {
+		height: auto;
+	}
 
-    .section2 .jumbotron {
-        margin-bottom: 0px;
-        height: auto;
-    }
+	.section2 .jumbotron {
+		margin-bottom: 0px;
+		height: auto;
+	}
 
-    .section2Header {
-        margin-top: 10vh;
-        width: 80vw;
-    }
+	.section2Header {
+		margin-top: 10vh;
+		width: 80vw;
+	}
 
-    .works:first-child {
-        margin-top: 20vh;
-    }
+	.works:first-child {
+		margin-top: 20vh;
+	}
 
-    .works:last-child {
-        margin-bottom: 10vh;
-    }
+	.works:last-child {
+		margin-bottom: 10vh;
+	}
 
-    .works {
-        width: 100%;
-        margin-bottom: 0;
-        margin-top: 0vh;
-    }
+	.works {
+		width: 100%;
+		margin-bottom: 0;
+		margin-top: 0vh;
+	}
 
-    .works p {
-        width: 80%;
-    }
+	.works p {
+		width: 80%;
+	}
 
-    .works img {
-        width: 20vw;
-    }
+	.works img {
+		width: 20vw;
+	}
 
 
-    .worksBackground {
-        width: 30vw;
-    }
+	.worksBackground {
+		width: 30vw;
+	}
 }
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
-    .works {
-        width: 40vw;
-    }
+	.works {
+		width: 40vw;
+	}
 
-    .works p {
-    font-family: Montserrat Light;
-    width: 40vw;
-    margin: 0 auto;
-    }
+	.works p {
+		font-family: Montserrat Light;
+		width: 40vw;
+		margin: 0 auto;
+	}
 
-    .works:last-child {
-        margin-top: 0;
-    }
+	.works:last-child {
+		margin-top: 0;
+	}
 
-    .section2Header {
-        width: 80vw;
-    }
+	.section2Header {
+		width: 80vw;
+	}
 }
