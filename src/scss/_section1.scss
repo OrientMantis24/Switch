@@ -37,6 +37,12 @@
 	cursor: default;
 }
 
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .jumbotron {
 	position: relative;
 	text-align: center;
@@ -54,6 +60,8 @@
 		font-family: "ProximaNovaLight";
 		letter-spacing: 3px;
 		text-shadow: 2px 0 white;
+		height: 80%;
+		width: 100%;
 	}
 }
 
@@ -102,7 +110,6 @@
 //WorkWithUs Button
 .workWithUsButton {
 	text-shadow: none;
-	padding-top: 2vh;
 	background-color: #54d154;
 	color: white;
 	width: 20vw;
@@ -151,11 +158,11 @@
 
 //Scroll Down Link
 .scrollDown {
+	color: black;
 	position: absolute;
+	bottom: 20px;
 	bottom: 10px;
-	background-color: white;
-	height: 3vh;
-	font-size: 1.8vh;
+	background-color: transparent !important;
 	padding-top: 0.2vh;
 	border-radius: 15px;
 	cursor: pointer;
@@ -171,15 +178,21 @@
 }
 
 .scrollDown a{
-	color: black !important;
+	height: auto;
 }
 
-.scrollDown a:hover {
-	text-decoration: none;
+.scrollDown:hover img {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+}
+
+.scrollDown:active {
+	box-shadow: none;
 }
 
 .scrollDown img {
-	src: "../public/scrollDown.png";
+	height: 50%;
+	width: 50%;
 }
 
 @media screen and (max-width: 767px) {
@@ -196,10 +209,6 @@
 		bottom: 1vh;
 		min-height: 4vh;
 		padding-top: 0;
-	}
-
-	.scrollDown img {
-		display: none;
 	}
 
 	.jumbotron h1 {
@@ -299,10 +308,4 @@
 
 .navbar {
 	overflow: auto;
-}
-
-@media screen and (max-width: 900px) {
-	.workWithUsButton{
-		display: none;
-	}
 }

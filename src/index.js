@@ -15,8 +15,11 @@ import Section6 from './Section6';
 import Section7 from './Section7';
 import Section8 from './Section8';
 import Footer from './Footer';
+import Scroll from 'react-scroll';
 
 const app = document.querySelector('#root');
+
+var Element = Scroll.Element;
 
 class App extends React.Component {
 	render() {
@@ -24,7 +27,7 @@ class App extends React.Component {
 			<div>
 				<Header/>
 				<Section1/>
-				<Section2/>
+				<Element name="myScrollToElement"><Section2 /></Element>
 				<Section3/>
 				<Section4/>
 				<Section5/>
